@@ -1,4 +1,11 @@
-.DS_Store
-.DS_Store?
-/venv
+.pytest_cache
+.venv
+.vscode
+**/__pycache__
+
+# MacOS
+**/.DS_Store
+**/.DS_Store?
+
+# Files
 /clean_data.csv

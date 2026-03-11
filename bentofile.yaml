@@ -1,0 +1,20 @@
+service: "src.service:MyBentoML"
+description: "Admissions prediction service"
+labels:
+  owner: "Jugoslav Stojcheski"
+  project: "admissions_project"
+include:
+  - "src/"
+  - "data/"
+models:
+  - admission_model:latest
+python:
+  packages:
+    - "bentoml==1.4.35"
+    - "ipykernel==7.2.0"
+    - "jwt==1.4.0"
+    - "pandas==3.0.0"
+    - "passlib[bcrypt]==1.7.4"
+    - "pydantic==2.12.5"
+    - "pyjwt==2.11.0"
+    - "scikit-learn==1.8.0"
